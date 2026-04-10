@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Agriculture Management System</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <style>.password-container {
+        display: flex;
+        gap: 10px; /* Space between inputs */
+    }
+    
+    .password-container input {
+        flex: 1; /* Equal width */
+    }
+    </style>
+</head>
+
+<body>
+    <div id="headerSection">
+        <h1>Agriculture Management System</h1>
+    </div>
+    <hr>
+    <div id="bodySection">
+        <form action="../api/register.php" method="POST">
+            <h2>Registration</h2>
+            <input type="text" name="name" placeholder="Enter name"><br>
+            <input type="number" name="mobile" placeholder="Enter mobile"><br>
+            
+            <!-- Password and Confirm Password in one row -->
+            <div class="password-container">
+                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="cpassword" placeholder="Confirm Password">
+            </div>
+            
+            
+            <input type="text" name="address" placeholder="Address"><br>          
+            <button class="text" type="submit">Register</button><br><br>
+            
+            <div id="s"> 
+                Already user? <a href="../index.html">Login here</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
